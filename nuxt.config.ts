@@ -9,13 +9,18 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxtjs/tailwindcss", "nuxt-headlessui", "@nuxtjs/google-fonts"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "nuxt-headlessui",
+    "@nuxtjs/google-fonts",
+    "nuxt-icon",
+  ],
 
   css: ["~/assets/scss/main.scss"],
 
   googleFonts: {
     families: {
-      Roboto: true,
+      Roboto: [100, 200, 300, 400, 500, 600],
       "Kode Mono": true,
     },
   },
