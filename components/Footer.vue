@@ -1,5 +1,5 @@
 <template lang="pug">
-  div.w-full.min-h-64.bg-black.rounded-b-sm.justify-between.items-center.p-10.fixed.bottom-0.text-white.font-light
+  div.w-full.min-h-64.bg-black.rounded-b-sm.justify-between.items-center.p-10.bottom-0.text-white.font-light
     div.grid.grid-cols-6.gap-6
       div.flex.flex-col.col-span-2
         p.mb-4.font-semibold About Paula

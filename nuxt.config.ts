@@ -22,6 +22,7 @@ export default defineNuxtConfig({
     families: {
       Roboto: [100, 200, 300, 400, 500, 600],
       "Kode Mono": true,
+      Lora: [100, 200, 300, 400, 500, 600],
     },
   },
 });
