@@ -56,7 +56,8 @@ div
       .p-2.flex.flex-col.items-center.justify-center
         Icon.w-8.h-8.mb-1(name="streamline-emojis:paw-prints")
         p.text-xl.font-serif Cruelty free
-    img.h-72.mx-32(src="/women.png")
+    .h-98.bg-white.mx-32.flex.items-center.justify-center
+      img.h-72(src="/women.png")
     .grid.grid-rows-2.h-72
       .p-2.flex.flex-col.items-center.justify-center
         Icon.w-8.h-8.mb-1(name="icon-park-outline:leaves", color="green")
@@ -66,8 +67,7 @@ div
         p.text-xl.font-serif Free delivery
 </template>
 
-<script setup>
-</script>
+<script setup></script>
 
 <style scoped lang="scss">
 .parallelogram {
