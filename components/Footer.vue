@@ -4,15 +4,9 @@
     .flex.flex-col.col-span-2
       p.mb-4.font-semibold About Paula
       p.break-words Thousands of people have benefited from our services. But let's be real - there's no magic bullet, just science. That's why we do what we do
-    .flex.flex-col
-      p.mb-4.font-semibold Pages
-      NuxtLink.cursor-pointer(v-for="item in menuItems", :to="`${item.value}`") {{ item.text }}
-    .flex.flex-col
-      p.mb-4.font-semibold Products
-      p.cursor-pointer(v-for="product in products") {{ product }}
-    .flex.flex-col
-      p.mb-4.font-semibold Help
-      p.cursor-pointer(v-for="item in helpSection") {{ item }}
+    FooterSection(title="Pages", :items="menuItems")
+    FooterSection(title="Products", :items="products")
+    FooterSection(title="Help", :items="helpSection")
     .flex.flex-col
       p.mb-4.font-semibold Contact us
       div.cursor-pointer.flex.items-center(v-for="item in contactItems")
