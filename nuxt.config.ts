@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { defineNuxtConfig } from "nuxt/config";
+
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
@@ -14,6 +16,7 @@ export default defineNuxtConfig({
     "nuxt-headlessui",
     "@nuxtjs/google-fonts",
     "nuxt-icon",
+    "@pinia/nuxt",
   ],
 
   css: ["~/assets/scss/main.scss"],
