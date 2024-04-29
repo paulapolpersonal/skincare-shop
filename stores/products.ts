@@ -14,7 +14,6 @@ export const useProductsStore = defineStore("products", () => {
         }
       );
       if (data) products.value.push(...data);
-      // if (data) products.value = data;
     } catch (error) {
       console.error("Error fetching products:", error);
     }

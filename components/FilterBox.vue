@@ -1,9 +1,11 @@
 <template lang="pug">
-Menu
-  MenuButton.inline-flex.justify-center.items-center.rounded-md.bg-neutral-400.px-4.py-2.text-sm.font-medium.text-white {{ title }}
+Menu(as="div")
+  MenuButton.inline-flex.justify-center.items-center.rounded-md.bg-neutral-400.px-4.py-2.text-sm.font-medium.text-white(
+    as="div"
+  ) {{ title }}
     Icon(name="material-symbols:arrow-drop-down-rounded", color="white")
-  MenuItems(v-for="item in items")
-    MenuItem {{ item }}
+  MenuItems(v-for="item in items", as="div")
+    MenuItem(as="div") {{ item }}
 </template>
 
 <script setup>
